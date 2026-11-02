@@ -97,7 +97,7 @@ p{margin:0 0 1em}
 
 /* contact */
 .head.center{margin-left:auto;margin-right:auto;text-align:center}
-.ccards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.ccards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .ccard{display:flex;flex-direction:column;align-items:flex-start;gap:4px;background:#fff;border-radius:var(--radius);padding:26px;text-decoration:none;color:var(--ink);border:1px solid transparent;transition:box-shadow .2s,transform .2s,border-color .2s}
 .ccard:hover{box-shadow:0 14px 34px rgba(11,59,92,.14);transform:translateY(-3px);border-color:var(--blue)}
 div.ccard:hover{box-shadow:none;transform:none;border-color:transparent}
@@ -120,7 +120,7 @@ div.ccard:hover{box-shadow:none;transform:none;border-color:transparent}
 @media (max-width:900px){
   .stats-in{grid-template-columns:repeat(2,1fr)}
   .split{grid-template-columns:1fr}
-  .ccards{grid-template-columns:1fr 1fr}
+  .ccards{grid-template-columns:1fr;max-width:520px;margin:0 auto}
   .split.rev>:first-child{order:2}
   .roles,.cards,.quotes{grid-template-columns:1fr 1fr}
 }
